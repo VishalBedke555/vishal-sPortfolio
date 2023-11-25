@@ -1,0 +1,382 @@
+
+.main-container{
+    background-color: rgb(24,24,27);
+    color: white;
+    padding: 10%;
+}
+
+    .text-img{
+        display: flex;
+    }
+    .text-img .heading-1{
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .text-img .heading-2{
+        font-size: 60px;
+        /* color: greenyellow; */
+        font-weight: 700;
+    }
+    .text-img .hero{
+        box-shadow: 10px 10px white;
+    }
+    .para{
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(179, 176, 176);
+        margin-top: 5%;
+    }
+    .resum-btn{
+        background-color: white;
+        padding: 10%;
+        left: -10px;
+        bottom: 10px;
+        position: relative;
+        transition: .2s;
+    }
+    .resum-btn a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .resum-btn:hover{
+        left: 0;
+        bottom: 0;
+        transition: .2s;
+    }
+    .resume-btn-div{
+        position: absolute;
+        /* background-image: linear-gradient(to right,rgb(209, 253, 11) 50%,rgb(103, 161, 35) ); */
+        width: 200px;
+    }
+    @media screen and (max-width:1250px) {
+        .resume-btn-div{
+            bottom: 220px;
+        }
+    }
+    .mobile-resume-btn-div{
+        position: absolute;
+        background-image: linear-gradient(to right,rgb(209, 253, 11) 50%,rgb(103, 161, 35) );
+        width: 200px;
+        
+    }
+    .experience-1{
+        display: flex;
+    }
+    /* .experience-1 h1{
+        color: greenyellow;
+    } */
+    .experience{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 1;
+        width: 60%;
+        padding: 2%;
+        background-color: rgb(25,25,28);
+        /* border-top:1px solid greenyellow; */
+        margin-top: 3%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+
+    .mobile-view{
+        background-color: rgb(24,24,27);
+        color: white;
+        padding: 10%;
+        display: none;
+    }
+    .mobile-view img{
+        box-shadow: 10px 10px white;
+    }
+    .mobile-view .heading-1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .mobile-view .heading-2{
+        font-size: 30px;
+        color: greenyellow;
+        font-weight: 700;
+    }
+    .experience-2 h1{
+        color: greenyellow;
+    }
+    .experience-div{
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin-top: 3%;
+        color: white;
+    }
+    @keyframes ZoomIn {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    .hello{
+        animation-name: ZoomIn;
+        animation-duration: .7s;
+        animation-iteration-count: infinite;
+    }
+    @media screen and (max-width:1100px) {
+        .mobile-view{
+            display: block;
+        }
+        .main-container{
+            display: none;
+        }
+    }
+    @media screen and (min-width:1101px) {
+        .main-container{
+            display: block;
+        }
+    }
+
+/* Style for home-2 page */
+.main-container-2{
+    background-color: rgb(24,24,27);
+    color: white;
+    padding: 10%;
+}
+.hero-2-main{
+    display: flex;
+   height: 1200px;
+}
+.hero-2{
+    /* background-color: yellowgreen; */
+    width: 100%;
+    /* background-image: linear-gradient(to right,rgb(209, 253, 11) 50%,rgb(152, 250, 41) ); */
+}
+.hero-2-img img{
+    position: relative;
+    left: 80%;
+    top: -450px;
+}
+.hero-2-experience{
+        position: absolute;
+        width: 85%;
+        padding: 2%;
+        background-color: rgb(25,25,28);
+        /* border-top:1px solid greenyellow; */
+        margin-top: 3%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        top: 750px;
+}
+.hero-2-experience .experience-1{
+    display: flex;
+    margin-right: 10%;
+}
+.hero-2-resume-btn-div{
+    position: absolute;
+    /* background-color: greenyellow; */
+    /* background-image: linear-gradient(to right,rgb(209, 253, 11) 50%,rgb(103, 161, 35) ); */
+    width: 200px;
+    right: 10%;
+}
+.hero-2-exp{
+    display: flex;
+}
+.anchore{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid yellowgreen    ;
+}
+.hero-2-exp h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+.exp-text{
+    color: rgb(71, 117, 160);
+    margin-top: 6%;
+    font-weight: 600;
+    font-size: 18px;
+}
+.exp-text-a{
+    font-weight: 600;
+    font-size: 18px;
+    /* margin-left: 70%; */
+    margin-top: 6%;
+}
+.resum-btn a{
+    text-decoration: none;
+    color: black;
+}
+.hero-2-resume-btn-div .resum-btn:hover{
+    left: 0;
+    bottom: 0;
+    transition: .2s;
+}
+.hero-2-resume-btn-div .resum-btn{
+    background-color: white;
+    padding: 10%;
+    left: -10px;
+    bottom: 10px;
+    position: relative;
+    transition: .2s;
+}
+pre{
+    width: 80%;
+    background-color: rgb(12,12,13);
+    color: white;
+    padding-left: 20px;
+}
+code{
+    font-weight: 600;
+}
+.bg-cont{
+    margin-left: -20px;
+    background-color: rgb(34,39,48);
+    border-left: 4px solid skyblue;
+}
+.digit{
+    color: gray;  
+}
+.prpl{
+    color: rgb(197, 156, 197);
+}
+.skb{
+    color: skyblue;
+}
+.gry{
+    color: yellowgreen;
+}
+
+/* small container */
+
+.small-cont{
+    background-color: rgb(24,24,27);
+    color: white;
+    padding: 10%;
+    display: none;
+}
+.small-cont .heading-1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.small-cont .heading-2{
+    font-size: 60px;
+    color: greenyellow;
+    font-weight: 700;
+}
+.hero-2-resume-btn-div1{
+    position: absolute;
+    /* background-color: greenyellow; */
+    background-image: linear-gradient(to right,rgb(209, 253, 11) 50%,rgb(103, 161, 35) );
+    width: 200px;
+    right: 10%;
+}
+.experience-1-small-2{
+    margin-right: 10%;
+}
+@media screen and (max-width:650px) {
+    .experience-1-small-2{
+        display: none;
+    }
+    .experience-1-small{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .small-cont{
+        display: block;
+    }
+    pre{
+        width: 98%;
+    }
+    .hero-2-main{
+        display: none;
+    }
+}
+.experience-2{
+    
+}
+.color-cont{
+    position: fixed;
+    left:0px;
+    top: 300px;
+}
+.green{
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    transition-duration: .2s;
+}
+.green:hover{
+    width: 30px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+.orange{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(248, 162, 115);
+    transition-duration: .2s;
+}
+.orange:hover{
+    width: 30px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+.purple{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(248, 36, 195);
+    transition-duration: .2s;
+}
+.purple:hover{
+    width: 30px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+.skyblue{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(141, 214, 243);
+    transition-duration: .2s;
+}
+.skyblue:hover{
+    width: 30px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+.image-container img {
+    animation: reveal 1s ease-in-out;
+    transform: translateX(0);
+    width: 570px;
+    height: 800px;
+  }
+  @media screen and (max-width:1247px) {
+    .image-container img{
+        width: 450px;
+        height: 600px;
+    }
+  }
+  @keyframes reveal {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .typing-animation {
+    overflow: hidden;
+    display: inline-block;
+    /* border-right: 0.15em solid #000; Adjust the color and size as desired */
+    white-space: nowrap;
+    margin: 0;
+    animation: typing 3s steps(50, end) ;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  .mobile_img img{
+    object-fit: cover;
+  }
