@@ -11,6 +11,17 @@ function bodyload() {
     btncolor.style.backgroundColor = 'greenyellow';
     var borders = document.querySelector(".experience");
     borders.style.borderTop = '2px solid greenyellow';
+
+    if(!localStorage.getItem('visits')){
+        localStorage.setItem('visits', 1)
+    }else{
+        let count = parseInt(localStorage.getItem('visits'));
+        count += 1;
+        localStorage.setItem('visits', count);
+    }
+    let visitCount = localStorage.getItem('visits');
+    const visitCounter = document.getElementById('visitCounter');
+    visitCounter.innerHTML = `Views 👁: ${visitCount}`;
 }
 function greenClick() {
     var colors1 = document.getElementById("colors1");

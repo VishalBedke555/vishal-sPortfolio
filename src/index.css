@@ -3,8 +3,13 @@
     background-color: rgb(24,24,27);
     color: white;
     padding: 10%;
+    font-family: 'Poppins', sans-serif;
 }
 
+    #visitCounter{
+        font-size: 20px;
+        font-weight: 800;
+    }
     .text-img{
         display: flex;
     }
