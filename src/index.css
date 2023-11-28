@@ -90,6 +90,7 @@
         color: white;
         padding: 10%;
         display: none;
+        height: 100vh;
     }
     .mobile-view img{
         box-shadow: 10px 10px white;
