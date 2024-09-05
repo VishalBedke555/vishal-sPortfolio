@@ -136,5 +136,5 @@ function blue1Click() {
 }
 
 function handleNavigate (){
-    window.location.href = "http://127.0.0.1:5501/public/Projects.html"
+    window.location.href = "https://pixelperfectdev.netlify.app/public/Projects.html"
 }
