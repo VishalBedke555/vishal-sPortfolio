@@ -19,6 +19,9 @@
 
 <body onload="bodyload()">
     <div class="main-container">
+        <div class="about-me" onclick="handleNavigate()">
+            About Me <i class="bi bi-arrow-right-circle"></i>
+        </div>
         <div id="visitCounter"></div>
         <div class="color-cont">
             <div onclick="greenClick()" class="green mb-1"></div>
@@ -27,9 +30,7 @@
             <div onclick="blueClick()" class="skyblue mb-1"></div>
         </div>
         <div class="text-img">
-            
             <div class="me-4">
-                
                     <div class="heading-1 typing-animation"><span class="bi bi-chevron-right" style="color: gray;"> </span> Bedke Vishal A.<span class="text-center hello">_</span></div>
                     <div id="colors">
                         <div class="heading-2">React js Developer</div>
@@ -43,11 +44,11 @@
                         <div class="experience-1">
                             <div class="me-2"><h1 id="colors1">1+</h1></div><div> Year of <br> experience</div>
                         </div>
-                        <div class="experience-1">
-                            <div class="me-2" ><h1 id="colors2">10+</h1></div> <div>Projects <br> Completed</div>
+                        <div class="experience-1 exp" onclick="handleNavigate()">
+                            <div class="me-2"><h1 id="colors2">10+</h1></div> <div>Projects <br> Completed</div>
                         </div>
-                        <div class="experience-1">
-                            <div class="me-2"><h1 id="colors3">4+</h1></div> <div>React <br> Projects</div>
+                        <div class="experience-1 exp" onclick="handleNavigate()">
+                            <div class="me-2"><h1 id="colors3">8+</h1></div> <div>React <br> Projects</div>
                         </div>
                     </div>
                     
@@ -58,10 +59,13 @@
             
         </div>
         <div class="resume-btn-div" id="btn-color">
-            <div  class="resum-btn"><a href="./public/vishal_resume(4.0).pdf">Download Resume</a></div> 
+            <div  class="resum-btn"><a href="./public/vishal_resume(4.1).pdf">Download Resume</a></div> 
         </div>
     </div>
     <div class="mobile-view">
+        <div class="about-me" onclick="handleNavigate()" style="top: 0px; right: 0px;">
+            About Me <i class="bi bi-arrow-right-circle"></i>
+        </div>
         <div class="text-center mobile_img">
             <img src="./public/images/my_pic.jpg" width="150px" height="150px" alt="">
         </div>
@@ -74,17 +78,17 @@
                 <div class="experience-2">
                     <div class="me-2"><h1>1+ </h1></div><div> Year of experience</div>
                 </div>
-                <div class="experience-2">
+                <div class="experience-2 exp" onclick="handleNavigate()">
                     <div class="me-2"><h1>10+ </h1></div> <div> Projects Completed</div>
                 </div>
-                <div class="experience-2">
-                    <div class="me-2"><h1>4+ </h1></div> <div> React Projects</div>
+                <div class="experience-2 exp" onclick="handleNavigate()">
+                    <div class="me-2"><h1>8+ </h1></div> <div> React Projects</div>
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-center mt-5 pb-5">
             <div class="mobile-resume-btn-div" id="btn-color">
-                <div  class="resum-btn"><a href="./public/vishal_resume(4.0).pdf">Download Resume</a></div> 
+                <div  class="resum-btn"><a href="./public/vishal_resume(4.1).pdf">Download Resume</a></div> 
             </div>
         </div>
     

@@ -1,0 +1,493 @@
+:root{
+    --primary: rgb(211, 8, 8);
+    /* --primary: #007bff; */
+    --secondery: rgb(2, 2, 85);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.profile-page {
+    padding: 4% 8%;
+}
+
+.profile-page-head {
+    border-bottom: 2px solid var(--secondery);
+    margin-top: 4%;
+}
+
+.profile-page-head h1 {
+    font-size: 3rem;
+    line-height: 44px;
+}
+
+.profile-page-section {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.profile-page-section h2 {
+    color: var(--primary);
+    margin-top: 10px;
+    font-weight: 900;
+}
+.profile-page-section p {
+    color: var(--secondery);
+    font-weight: 600;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+.mission-list li {
+    margin-bottom: 10px;
+}
+
+.profile-page-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--secondery);
+    padding: 4%;
+}
+
+.profile-page-box div {
+    border-right: 1px solid var(--secondery);
+    text-align: center;
+}
+
+.profile-page-box .profile-digits {
+    color:  var(--primary);
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0px;
+}
+.profile-page-box .profile-text {
+    font-size: 20px;
+    margin: 0px 0px 10px;
+    color: var(--secondery);
+    font-weight: 500;
+}
+
+.profile-page-box-first span {
+    color:  var(--primary);
+    font-size: 54px;
+}
+
+.profile-page-box-first p {
+    font-size: 20px;
+    margin: 0px 0px 10px;
+    color: var(--secondery);
+    font-weight: 500;
+}
+
+.profile-our-company {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.profile-our-company-p1 {
+    color:  var(--primary);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 12px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.profile-our-company-p2 {
+    line-height: 30px;
+    text-align: justify;
+    padding: 4%;
+    margin: 0px;
+}
+
+.what-we-do{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    /* border-bottom: 2px solid var(--secondery);
+    padding-bottom: 12px; */
+}
+.what-we-do-left{
+    background-color:  var(--primary);
+    padding: 4%;
+    color: white;
+    width: 300px;
+}
+.what-we-do-left-main{
+    display: flex;
+    justify-content: center;
+    margin-top: -26%;
+}
+
+.what-we-do-left-heading {
+    font-size: 24px;
+}
+
+.what-we-do-left-description {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.what-we-do-right-heading {
+    font-size: 24px;
+    color:  var(--primary);
+    margin: 12px 0px;
+}
+
+.what-we-do-right-description {
+    font-size: 14px;
+    margin: 0px;
+}
+.back-key{
+    text-decoration: none; 
+    color: var(--primary); 
+    font-weight: 600;
+    transition: 0.4s;
+    padding: 6px;
+}
+.back-key:hover{
+    background-color: var(--primary);
+    color: white;
+    transition: 0.4s;
+}
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .profile-page {
+        padding: 4% 5%;
+    }
+    .profile-our-company {
+        grid-template-columns: 1fr;
+    }
+    .what-we-do {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-page-head h1 {
+        font-size: 2.5rem;
+        line-height: 38px;
+    }
+    .profile-page-section {
+        display: grid;
+        grid-template-columns: 12fr;
+    }
+    .profile-page-section img{
+        display: none;
+    }
+    .profile-page-box {
+        grid-template-columns: 1fr 1fr;
+        padding: 2%;
+    }
+    .profile-page-box-other-div1{
+        border: none;
+    }
+    .profile-page-box .profile-digits {
+        font-size: 28px;
+    }
+    .profile-page-box .profile-text,
+    .profile-page-box-first p {
+        font-size: 18px;
+    }
+    .profile-page-box-first span {
+        font-size: 44px;
+    }
+    .profile-our-company-p1 {
+        font-size: 1.8rem;
+    }
+    .profile-our-company-p2 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .what-we-do-left-heading,
+    .what-we-do-right-heading {
+        font-size: 22px;
+    }
+    .what-we-do-left-description,
+    .what-we-do-right-description {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-page {
+        padding: 2% 4%;
+    }
+    .profile-page-head h1 {
+        font-size: 2rem;
+        line-height: 32px;
+    }
+    .profile-page-box {
+        grid-template-columns: 1fr;
+        padding: 2%;
+    }
+    .profile-page-box .profile-digits {
+        font-size: 24px;
+    }
+    .profile-page-box .profile-text,
+    .profile-page-box-first p {
+        font-size: 16px;
+    }
+    .profile-page-box-first span {
+        font-size: 36px;
+    }
+    .profile-our-company-p1 {
+        font-size: 1.6rem;
+    }
+    .profile-page-box div{
+        border: none;
+    }
+    .profile-our-company-p2 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .what-we-do-left-heading,
+    .what-we-do-right-heading {
+        font-size: 20px;
+    }
+    .what-we-do-left-description,
+    .what-we-do-right-description {
+        font-size: 12px;
+    }
+}
+
+.profile-page-project {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.profile-page-project-div {
+    padding: 2% 3%;
+}
+
+.profile-page-project h2 {
+    color: var(--primary);
+    margin: 12px 0px;
+    /* border-bottom: 2px solid var(--primary); */
+}
+
+.profile-page-project p {
+    color: var(--secondery);
+    text-align: justify;
+    margin: 0px;
+}
+/* .profile-contact{
+    border-bottom: 1px solid var(--secondery);
+} */
+
+.profile-contact-heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondery);
+}
+
+.profile-contact-flex {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.profile-contact-grid {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.profile-contact-grid-head {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0px;
+    color: var(--primary);
+}
+
+.profile-contact-grid-foot {
+    font-size: 14px;
+    margin: 0px;
+    color: var(--secondery);
+}
+
+.profile-contact-icon {
+    margin-right: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-contact-icon i {
+    font-size: 2rem;
+    color: var(--secondery);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .profile-page-project {
+        grid-template-columns: 1fr;
+    }
+    .profile-page-project-div {
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-page-project-div {
+        padding: 2%;
+    }
+    .profile-contact-heading {
+        font-size: 20px;
+    }
+    .profile-contact-grid-head {
+        font-size: 24px;
+    }
+    .profile-contact-grid-foot {
+        font-size: 13px;
+    }
+    .profile-contact-icon i {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-page-project-div {
+        padding: 1%;
+    }
+    .profile-contact-heading {
+        font-size: 18px;
+    }
+    .profile-contact-grid-head {
+        font-size: 20px;
+    }
+    .profile-contact-grid-foot {
+        font-size: 12px;
+    }
+    .profile-contact-icon i {
+        font-size: 1.6rem;
+    }
+    .profile-contact-flex {
+        grid-template-columns: 1fr;
+    }
+}
+
+.thank-you-section{
+    text-align: center;
+    border-top: 2px solid var(--secondery);
+    margin-top: 12px;
+}
+
+.thank-you-section h2{
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+.thank-you-section p{
+    color: var(--secondery);
+    margin-top: 0px;
+}
+
+.welcome-page {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.welcome-container {
+    background: #fff;
+    padding: 4%;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 50px solid var(--primary);
+}
+
+.welcome-header h1 {
+    font-size: 62px;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+
+.subheader {
+    font-size: 20px;
+    color: var(--secondery);
+}
+
+.welcome-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.team-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary); 
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.team-button:hover {
+    background-color: var(--primary);
+}
+
+.profile-services-heading{
+    /* text-align: center; */
+    color: var(--primary);
+    margin-bottom: 0px;
+    margin-top: 4%;
+    font-size: 2.5rem;
+    line-height: 44px;
+    border-bottom: 2px solid var(--secondery);
+}
+
+.profile-services-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    padding: 20px;
+  }
+
+  @media screen and (max-width:868px){
+    .profile-services-container {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        padding: 20px;
+      }
+  }
+  @media screen and (max-width:668px){
+    .profile-services-container {
+        display: grid;
+        grid-template-columns: 12fr;
+        padding: 20px;
+      }
+  }
+  
+  .profile-service-card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    /* width: 250px; */
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .profile-service-icon {
+    font-size: 50px;
+    color: var(--primary);
+    margin-bottom: 15px;
+  }
+  
+  .profile-service-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--secondery);
+  }
+  
+  .profile-service-description {
+    font-size: 14px;
+    color: var(--secondery);
+  }
+  

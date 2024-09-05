@@ -133,5 +133,8 @@ function blue1Click() {
     heroBtn.style.backgroundColor = 'rgb(141, 214, 243)';
     var borders = document.querySelector(".hero-2-experience");
     borders.style.borderTop = '2px solid rgb(141, 214, 243)'
+}
 
+function handleNavigate (){
+    window.location.href = "http://127.0.0.1:5501/public/Projects.html"
 }
