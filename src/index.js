@@ -12,9 +12,9 @@ function bodyload() {
     var borders = document.querySelector(".experience");
     borders.style.borderTop = '2px solid greenyellow';
 
-    if(!localStorage.getItem('visits')){
+    if (!localStorage.getItem('visits')) {
         localStorage.setItem('visits', 1)
-    }else{
+    } else {
         let count = parseInt(localStorage.getItem('visits'));
         count += 1;
         localStorage.setItem('visits', count);
@@ -135,6 +135,6 @@ function blue1Click() {
     borders.style.borderTop = '2px solid rgb(141, 214, 243)'
 }
 
-function handleNavigate (){
+function handleNavigate() {
     window.location.href = "https://pixelperfectdev.netlify.app/public/Projects.html"
 }
