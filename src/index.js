@@ -97,7 +97,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function handleNavigate() {
-    window.location.href = "./public/Projects.html";
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+        window.scrollTo({
+            top: projectsSection.offsetTop - 80,
+            behavior: 'smooth'
+        });
+    }
 }
 // Project details data
 const projectDetails = {
