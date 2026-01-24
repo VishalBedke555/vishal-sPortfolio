@@ -99,28 +99,160 @@ document.addEventListener('DOMContentLoaded', function () {
 function handleNavigate() {
     window.location.href = "./public/Projects.html";
 }
-
 // Project details data
 const projectDetails = {
     'vlog-call': {
         title: 'Vlog Call Admin Panel',
-        description: 'A comprehensive admin panel designed to bridge the gap between fans and celebrities through unique video and voice call experiences.',
+        description: 'Bridges the gap between fans and celebrities, offering unique video and voice call experiences. Connect directly with your favorite stars, enjoy personalized interactions, and create memorable moments through our easy-to-use platform.',
         role: 'Full Stack Developer',
-        technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Socket.io', 'JWT Authentication'],
+        technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Socket.io', 'JWT Authentication', 'Payment Gateway'],
         features: [
-            'Real-time video/voice call scheduling',
-            'Celebrity and fan user management',
-            'Payment integration for call bookings',
-            'Admin dashboard with analytics',
-            'Secure authentication system',
-            'Responsive admin interface'
+            'User-friendly admin panel connecting fans with celebrities',
+            'Personalized interaction features',
+            'Video and voice call scheduling system',
+            'User management and analytics dashboard',
+            'Secure payment processing',
+            'Real-time notification system'
         ],
         responsibilities: [
-            'Designed and developed the complete admin panel architecture',
-            'Implemented real-time communication features',
-            'Integrated payment gateway for transactions',
-            'Created user management and analytics dashboard',
-            'Ensured security and scalability of the platform'
+            'Created the complete admin panel in React.js',
+            'Implemented personalized interaction features',
+            'Managed user experience effectively',
+            'Integrated real-time communication',
+            'Developed secure authentication system',
+            'Optimized performance and scalability'
+        ]
+    },
+    'heaven-celebrations': {
+        title: 'Heaven Celebrations Admin Panel',
+        description: 'Lets you book customized theater spaces by the hour for any occasion. Tailor your event experience with personalized setups and amenities, ensuring a unique and memorable celebration.',
+        role: 'React.js Developer',
+        technologies: ['React.js', 'REST API', 'Booking System', 'Calendar Integration', 'Payment Processing'],
+        features: [
+            'Theater space booking by the hour',
+            'Customizable event setups',
+            'Amenity management system',
+            'Booking calendar and scheduling',
+            'Payment integration',
+            'Admin dashboard for venue management'
+        ],
+        responsibilities: [
+            'Designed and developed admin panel using React.js',
+            'Integrated booking management features',
+            'Implemented setup customization options',
+            'Added event amenity handling',
+            'Created responsive admin interface',
+            'Ensured smooth user experience'
+        ]
+    },
+    'foarchs-admin': {
+        title: 'FoArchs Admin Panel',
+        description: 'A versatile social platform designed to connect professionals, foster growth, and create opportunities. Whether you\'re seeking jobs, generating leads, or sharing posts, foArchs provides a dynamic space for networking and career advancement.',
+        role: 'Full Stack Developer',
+        technologies: ['React.js', 'MongoDB', 'Express.js', 'Socket.io', 'Real-time Updates', 'Scalable Architecture'],
+        features: [
+            'Professional networking platform',
+            'Job searching and posting system',
+            'Lead generation features',
+            'Post sharing and content management',
+            'Real-time notifications',
+            'User profile and connection management'
+        ],
+        responsibilities: [
+            'Built versatile social platform in React.js',
+            'Implemented job searching and lead generation',
+            'Added post sharing functionality',
+            'Optimized for performance and scalability',
+            'Created real-time features',
+            'Ensured platform security'
+        ]
+    },
+    'androbim-courses': {
+        title: 'Androbim Courses Website',
+        description: 'Developed an educational platform using React.js, offering courses in various technologies. The platform includes course management, user registration, and interactive learning features.',
+        role: 'Frontend Developer',
+        technologies: ['React.js', 'Learning Management', 'User Registration', 'Course System', 'Interactive Features'],
+        features: [
+            'Educational platform for technology courses',
+            'Course management system',
+            'User registration and authentication',
+            'Interactive learning modules',
+            'Progress tracking',
+            'Certificate generation'
+        ],
+        responsibilities: [
+            'Developed educational platform using React.js',
+            'Implemented course management features',
+            'Added user registration system',
+            'Created interactive learning features',
+            'Designed responsive course interfaces',
+            'Integrated progress tracking'
+        ]
+    },
+    'jungly-matka-admin': {
+        title: 'Jungly Matka Admin Panel',
+        description: 'Designed and developed the admin panel for Jungly Matka, a betting app, allowing administrators to efficiently manage users, monitor betting activities, and oversee app operations.',
+        role: 'React.js Developer',
+        technologies: ['React.js', 'Admin Dashboard', 'User Management', 'Transaction Monitoring', 'Security', 'Real-time Updates'],
+        features: [
+            'Betting app administration',
+            'User management system',
+            'Betting activity monitoring',
+            'Transaction tracking',
+            'App operation oversight',
+            'Real-time dashboard updates'
+        ],
+        responsibilities: [
+            'Designed and developed admin panel',
+            'Created user management features',
+            'Implemented betting activity monitoring',
+            'Added transaction oversight system',
+            'Ensured intuitive navigation',
+            'Built robust functionality for seamless management'
+        ]
+    },
+    'quiz-app': {
+        title: 'Quiz App Admin Panel',
+        description: 'Developed an admin panel in React.js for managing quizzes, with features for creating, updating, and analyzing quiz results.',
+        role: 'React.js Developer',
+        technologies: ['React.js', 'Quiz Management', 'Analytics', 'Question Bank', 'Result Analysis'],
+        features: [
+            'Quiz creation and management',
+            'Question bank system',
+            'Result analysis dashboard',
+            'Performance analytics',
+            'User response tracking',
+            'Quiz scheduling'
+        ],
+        responsibilities: [
+            'Developed admin panel in React.js',
+            'Implemented quiz creation features',
+            'Added quiz updating capabilities',
+            'Created result analysis system',
+            'Built analytics dashboard',
+            'Ensured smooth quiz management'
+        ]
+    },
+    'news-app': {
+        title: 'News App Admin Panel',
+        description: 'Built an admin panel using React.js for managing news articles, including real-time updates, category management, and user interactions.',
+        role: 'React.js Developer',
+        technologies: ['React.js', 'News Management', 'Real-time Updates', 'Category System', 'Content Management'],
+        features: [
+            'News article management',
+            'Real-time updates system',
+            'Category and tag management',
+            'User interaction tracking',
+            'Content scheduling',
+            'Analytics dashboard'
+        ],
+        responsibilities: [
+            'Built admin panel using React.js',
+            'Implemented news article management',
+            'Added real-time update features',
+            'Created category management system',
+            'Integrated user interaction features',
+            'Developed content scheduling'
         ]
     }
 };
@@ -138,10 +270,10 @@ function showProjectDetails(projectId) {
     body.innerHTML = `
             <div class="modal-project-details">
                 <p><strong>Description:</strong> ${project.description}</p>
-                <p><strong>Role:</strong> ${project.role}</p>
+                <p><strong>My Role:</strong> ${project.role}</p>
                 
                 <h4>Technologies Used:</h4>
-                <div class="project-tech">
+                <div class="project-tech" style="margin: 1rem 0 2rem;">
                     ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
                 
@@ -170,6 +302,13 @@ function closeModal() {
 // Close modal on outside click
 document.getElementById('projectModal').addEventListener('click', function (e) {
     if (e.target === this) {
+        closeModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
         closeModal();
     }
 });
