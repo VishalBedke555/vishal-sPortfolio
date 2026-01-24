@@ -1,114 +1,658 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="green">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishal's Portfolio</title>
-    <link rel="stylesheet" href="./src/index.css">
+    <title>Vishal Bedke | MERN Full Stack Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="./src/index.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/index.css">
 </head>
 
-<body onload="bodyload()">
-    <div class="main-container">
-        <div class="about-me" onclick="handleNavigate()">
-            About Me <i class="bi bi-arrow-right-circle"></i>
+<body>
+    <!-- Desktop Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">VB</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="theme-toggle">
+                <i class="bi bi-palette"></i>
+            </button>
         </div>
-        <!-- <div id="visitCounter"></div> -->
-        <div class="color-cont">
-            <div onclick="greenClick()" class="green mb-1"></div>
-            <div onclick="orangeClick()" class="orange mb-1"></div>
-            <div onclick="purpleClick()" class="purple mb-1"></div>
-            <div onclick="blueClick()" class="skyblue mb-1"></div>
-        </div>
-        <div class="text-img">
-            <div class="me-4">
-                <div class="heading-1 typing-animation"><span class="bi bi-chevron-right" style="color: gray;"> </span>
-                    Bedke Vishal A.<span class="text-center hello">_</span></div>
-                <div id="colors">
-                    <div class="heading-2">React js Developer</div>
-                </div>
-                <p class="para">As a frontend developer, I led the creation of a modern and responsive
-                    e-commerce website that provided a seamless shopping experience for users. Leveraging my
-                    expertise in HTML, CSS, and JavaScript, I designed and implemented a user-friendly interface
-                    that adapted beautifully across various devices and screen sizes.</p>
+    </nav>
 
-                <div class="experience">
-                    <div class="experience-1">
-                        <div class="me-2">
-                            <h1 id="colors1">1.6+</h1>
+    <!-- Theme Color Selector -->
+    <div class="theme-sidebar">
+        <div class="theme-label">THEME</div>
+        <div class="color-dots">
+            <div class="color-dot green-dot active" data-theme="green"></div>
+            <div class="color-dot blue-dot" data-theme="blue"></div>
+            <div class="color-dot purple-dot" data-theme="purple"></div>
+            <div class="color-dot orange-dot" data-theme="orange"></div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container" id="home">
+        <div class="content-wrapper">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="intro-text">
+                        <p class="greeting">Hello, I'm</p>
+                        <h1 class="hero-title">Vishal <span class="accent-color">Bedke</span></h1>
+                        <h2 class="hero-subtitle">MERN Full Stack Developer</h2>
+                        <p class="about-text">
+                            With <strong>2.9+ years</strong> of professional experience, I specialize in building
+                            modern, scalable web applications using the MERN stack, Next.js, and Tailwind CSS.
+                            Passionate about creating elegant solutions to complex problems.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">REST APIs</span>
                         </div>
-                        <div> Years of <br> experience</div>
                     </div>
-                    <div class="experience-1 exp" onclick="handleNavigate()">
-                        <div class="me-2">
-                            <h1 id="colors2">10+</h1>
+                    <div class="hero-image">
+                        <div class="image-frame">
+                            <img src="./public/images/my_pic.jpg" alt="Vishal Bedke" class="profile-img">
+                            <div class="image-overlay"></div>
                         </div>
-                        <div>Projects <br> Completed</div>
+                        <div class="floating-badge">
+                            <i class="bi bi-award"></i>
+                            <span>Available for Work</span>
+                        </div>
                     </div>
-                    <div class="experience-1 exp" onclick="handleNavigate()">
-                        <div class="me-2">
-                            <h1 id="colors3">8+</h1>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section" id="about">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I'm a passionate Full Stack Developer specializing in the MERN stack with expertise in Next.js and
+                    Tailwind CSS. With <strong>2.9+ years</strong> of hands-on experience, I've successfully delivered
+                    10+ projects ranging from e-commerce platforms to complex admin panels and social networking
+                    applications.
+                </p>
+                <p class="about-text">
+                    My approach combines technical expertise with a strong focus on user experience, performance
+                    optimization, and clean, maintainable code. I thrive in collaborative environments and enjoy turning
+                    complex requirements into elegant digital solutions.
+                </p>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <h2 class="section-title">Achievements</h2>
+                <div class="stats-grid">
+                    <div class="stat-card" onclick="handleNavigate()">
+                        <div class="stat-number">2.9+</div>
+                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-icon"><i class="bi bi-calendar-check"></i></div>
+                    </div>
+                    <div class="stat-card" onclick="handleNavigate()">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects Completed</div>
+                        <div class="stat-icon"><i class="bi bi-check-circle"></i></div>
+                    </div>
+                    <div class="stat-card" onclick="handleNavigate()">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">React Projects</div>
+                        <div class="stat-icon"><i class="bi bi-code-slash"></i></div>
+                    </div>
+                    <div class="stat-card" onclick="handleNavigate()">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Admin Panels</div>
+                        <div class="stat-icon"><i class="bi bi-layout-text-window"></i></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-section" id="skills">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4><i class="bi bi-front"></i> Frontend</h4>
+                        <div class="skill-list">
+                            <span>React.js</span>
+                            <span>Next.js</span>
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Tailwind CSS</span>
+                            <span>Bootstrap</span>
+                            <span>Material-UI</span>
                         </div>
-                        <div>React <br> Projects</div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="bi bi-server"></i> Backend</h4>
+                        <div class="skill-list">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>REST APIs</span>
+                            <span>MongoDB</span>
+                            <span>Mongoose</span>
+                            <span>JWT Auth</span>
+                            <span>Socket.io</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="bi bi-tools"></i> Tools & Others</h4>
+                        <div class="skill-list">
+                            <span>Git & GitHub</span>
+                            <span>VS Code</span>
+                            <span>Figma</span>
+                            <span>Postman</span>
+                            <span>Netlify</span>
+                            <span>Vercel</span>
+                            <span>Firebase</span>
+                            <span>Agile/Scrum</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Section -->
+            <section class="projects-section" id="projects">
+                <div class="projects-container">
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="section-subtitle">A showcase of my work across various domains and technologies</p>
+
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Admin Panel</div>
+                                <h3 class="project-title">Vlog Call Admin Panel</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Admin panel connecting fans with celebrities through video/voice calls. Features
+                                    user management,
+                                    call scheduling, payment processing, and real-time analytics.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Socket.io</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Full Stack</span>
+                                <button class="project-more" onclick="showProjectDetails('vlog-call')">View
+                                    Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Fintech</div>
+                                <h3 class="project-title">Dakshin Pay</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Digital payment and loan management platform with responsive design and seamless
+                                    transaction processing. Focused on UX and financial security.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Tailwind CSS</span>
+                                    <span class="tech-tag">Payment API</span>
+                                    <span class="tech-tag">Security</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Financial Platform</span>
+                                <a href="https://dakshinpay.com/" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i> Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Website</div>
+                                <h3 class="project-title">Vlog Call Website</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Static website showcasing the Vlog Call application features. Responsive design with
+                                    clear call-to-action and service explanation.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">Responsive</span>
+                                    <span class="tech-tag">SEO</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Marketing Site</span>
+                                <a href="https://vlogcall.com/" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i> Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Admin Panel</div>
+                                <h3 class="project-title">Heaven Celebrations Admin</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Theater booking management system for customized event spaces. Features booking
+                                    management,
+                                    setup customization, and amenity handling.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">REST API</span>
+                                    <span class="tech-tag">Booking System</span>
+                                    <span class="tech-tag">Admin Dashboard</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Event Management</span>
+                                <button class="project-more" onclick="showProjectDetails('heaven-celebrations')">View
+                                    Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Social Platform</div>
+                                <h3 class="project-title">FoArchs Admin Panel</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Professional networking platform admin with job search, lead generation, and content
+                                    sharing features. Optimized for performance.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Real-time</span>
+                                    <span class="tech-tag">Scalability</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Social Networking</span>
+                                <button class="project-more" onclick="showProjectDetails('foarchs-admin')">View
+                                    Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Project 6 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Website</div>
+                                <h3 class="project-title">FoArchs Website</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Professional networking platform website showcasing features and value proposition.
+                                    Static site with modern design.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">Marketing</span>
+                                    <span class="tech-tag">Landing Page</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Networking Site</span>
+                                <a href="http://foarch.com/" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i> Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 7 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Portfolio</div>
+                                <h3 class="project-title">Androbim Services</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Project showcase website for BIM and engineering services. Features detailed case
+                                    studies,
+                                    animations, and responsive layouts.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">CSS Animations</span>
+                                    <span class="tech-tag">Portfolio</span>
+                                    <span class="tech-tag">Showcase</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Service Showcase</span>
+                                <a href="https://www.dev.androbim.in/" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i> Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 8 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Education</div>
+                                <h3 class="project-title">Androbim Courses</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Educational platform offering technology courses. Includes course management, user
+                                    registration, and interactive learning features.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Learning Management</span>
+                                    <span class="tech-tag">User Registration</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">E-Learning</span>
+                                <button class="project-more" onclick="showProjectDetails('androbim-courses')">View
+                                    Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Project 9 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Admin Panel</div>
+                                <h3 class="project-title">Jungly Matka Admin</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Betting app admin panel for user management, transaction monitoring, and app
+                                    operations.
+                                    Focus on security and usability.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Security</span>
+                                    <span class="tech-tag">Admin Dashboard</span>
+                                    <span class="tech-tag">Real-time Updates</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Entertainment</span>
+                                <button class="project-more" onclick="showProjectDetails('jungly-matka-admin')">View
+                                    Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Project 10 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">E-commerce</div>
+                                <h3 class="project-title">Vijayalaxmi Jewellers</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Jewelry e-commerce website with elegant design and smooth user experience. Showcases
+                                    products with beautiful visuals and intuitive navigation.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">E-commerce</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Online Store</span>
+                                <a href="https://vijayalaxmijewellers.com/" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i> Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 11 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Website</div>
+                                <h3 class="project-title">Jungly Matka Website</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Promotional website for betting app with sleek design and responsive layout. Drives
+                                    app downloads and user engagement.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Marketing</span>
+                                    <span class="tech-tag">App Promotion</span>
+                                    <span class="tech-tag">Responsive</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Promotional Site</span>
+                                <a href="https://junglymatka.com/" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i> Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project 12 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Admin Panel</div>
+                                <h3 class="project-title">Quiz App Admin</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Quiz management system for creating, updating, and analyzing quiz results. Features
+                                    question bank and performance analytics.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Quiz System</span>
+                                    <span class="tech-tag">Analytics</span>
+                                    <span class="tech-tag">Content Management</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Education</span>
+                                <button class="project-more" onclick="showProjectDetails('quiz-app')">View
+                                    Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Project 13 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-badge">Admin Panel</div>
+                                <h3 class="project-title">News App Admin</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    News article management system with real-time updates, category management, and user
+                                    interaction features.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Real-time</span>
+                                    <span class="tech-tag">Content Management</span>
+                                    <span class="tech-tag">Category System</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-type">Media</span>
+                                <button class="project-more" onclick="showProjectDetails('news-app')">View
+                                    Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-summary">
+                        <div class="summary-card">
+                            <i class="bi bi-layout-text-window"></i>
+                            <h4>5+</h4>
+                            <p>Admin Panels Built</p>
+                        </div>
+                        <div class="summary-card">
+                            <i class="bi bi-globe"></i>
+                            <h4>7+</h4>
+                            <p>Live Websites</p>
+                        </div>
+                        <div class="summary-card">
+                            <i class="bi bi-code-slash"></i>
+                            <h4>8+</h4>
+                            <p>React Projects</p>
+                        </div>
+                        <div class="summary-card">
+                            <i class="bi bi-stack"></i>
+                            <h4>10+</h4>
+                            <p>Total Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Modal -->
+            <div class="project-modal" id="projectModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="modalTitle">Project Details</h3>
+                        <button class="modal-close" onclick="closeModal()">
+                            <i class="bi bi-x"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        <!-- Project details will be loaded here -->
                     </div>
                 </div>
             </div>
-            <div class="image-container">
-                <img src="./public/images/my_pic.jpg" alt="">
-            </div>
-        </div>
-        <div class="resume-btn-div" id="btn-color">
-            <div class="resum-btn"><a href="./public/Vishal_resume(5.1).pdf">Download Resume</a></div>
+
+            <!-- CTA Section -->
+            <section class="cta-section" id="contact">
+                <div class="cta-content">
+                    <h3>Let's Build Something Amazing</h3>
+                    <p>I'm currently open to new opportunities and exciting projects. Let's discuss how we can work
+                        together!</p>
+                    <div class="cta-buttons">
+                        <a href="./public/Vishal_resume(5.1).pdf" class="btn-primary" download>
+                            <i class="bi bi-download"></i> Download Resume
+                        </a>
+                        <a href="mailto:bedkevishal@gmail.com" class="btn-secondary">
+                            <i class="bi bi-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+
+    <!-- Mobile View -->
     <div class="mobile-view">
-        <div class="about-me" onclick="handleNavigate()" style="top: 10px; right: 10px;">
-            About Me <i class="bi bi-arrow-right-circle"></i>
+        <div class="mobile-header">
+            <div class="mobile-logo">VB</div>
+            <button class="mobile-menu-btn">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
-        <div class="text-center mobile_img">
-            <img src="./public/images/my_pic.jpg" width="150px" height="150px" alt="">
-        </div>
-        <div class="text-center mt-3">
-            <div class="heading-1">Bedke Vishal A. <span class="text-center hello">_</span></div>
-            <div id="colors" class="heading-2">MERN Stack Developer</div>
-        </div>
-        <div class="d-flex justify-content-center">
-            <div class="experience-div text-center">
-                <div class="experience-2">
-                    <div class="me-2">
-                        <h1>1.6+ </h1>
-                    </div>
-                    <div> Years of experience</div>
-                </div>
-                <div class="experience-2 exp" onclick="handleNavigate()">
-                    <div class="me-2">
-                        <h1>10+ </h1>
-                    </div>
-                    <div> Projects Completed</div>
-                </div>
-                <div class="experience-2 exp" onclick="handleNavigate()">
-                    <div class="me-2">
-                        <h1>8+ </h1>
-                    </div>
-                    <div> React Projects</div>
+        <div class="mobile-hero">
+            <div class="mobile-profile">
+                <div class="mobile-img-container">
+                    <img src="./public/images/my_pic.jpg" alt="Vishal Bedke">
+                    <div class="mobile-badge">MERN Developer</div>
                 </div>
             </div>
-        </div>
-        <div class="d-flex justify-content-center mt-5 pb-5">
-            <div class="mobile-resume-btn-div" id="btn-color">
-                <div class="resum-btn"><a href="./public/Vishal_resume(5.1).pdf">Download Resume</a></div>
+            <div class="mobile-intro">
+                <h1 class="mobile-name">Vishal Bedke</h1>
+                <h2 class="mobile-title">Full Stack Developer</h2>
+                <div class="mobile-tech">
+                    <span class="mobile-tech-tag">React</span>
+                    <span class="mobile-tech-tag">Next.js</span>
+                    <span class="mobile-tech-tag">Node.js</span>
+                    <span class="mobile-tech-tag">MongoDB</span>
+                </div>
+            </div>
+            <div class="mobile-about">
+                <p>With 2.9+ years of experience building modern web applications using MERN stack, Next.js, and
+                    Tailwind CSS.</p>
+            </div>
+            <div class="mobile-stats">
+                <div class="mobile-stat">
+                    <div class="mobile-stat-number">2.9+</div>
+                    <div class="mobile-stat-label">Years</div>
+                </div>
+                <div class="mobile-stat">
+                    <div class="mobile-stat-number">10+</div>
+                    <div class="mobile-stat-label">Projects</div>
+                </div>
+                <div class="mobile-stat">
+                    <div class="mobile-stat-number">8+</div>
+                    <div class="mobile-stat-label">React Apps</div>
+                </div>
+            </div>
+            <div class="mobile-cta">
+                <a href="./public/Vishal_resume(5.1).pdf" class="mobile-resume-btn" download>
+                    <i class="bi bi-download"></i> Download Resume
+                </a>
+                <a href="mailto:bedkevishal@gmail.com" class="mobile-contact-btn">
+                    <i class="bi bi-envelope"></i> Contact Me
+                </a>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Vishal Bedke</div>
+            <p class="footer-tagline">MERN Full Stack Developer | Next.js | Tailwind CSS</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/vishal-bedke-053b17246" target="_blank" class="footer-link">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/VishalBedke555/" target="_blank" class="footer-link">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="mailto:bedkevishal@gmail.com" class="footer-link">
+                    <i class="bi bi-envelope"></i> Email
+                </a>
+                <a href="tel:+917030391086" class="footer-link">
+                    <i class="bi bi-telephone"></i> +91 7030391086
+                </a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 Vishal Bedke. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/index.js"></script>
 </body>
 
 </html>
