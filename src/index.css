@@ -202,6 +202,7 @@ body {
 /* ===== HERO SECTION ===== */
 .hero-section {
     margin-bottom: 4rem;
+    margin-top: 16px;
 }
 
 .hero-content {
@@ -865,20 +866,28 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
+    /* .navbar {
         display: none;
-    }
+    } */
 
-    .main-container {
+    /* .main-container {
         display: none;
-    }
+    } */
 
     .mobile-view {
-        display: block;
+        display: none;
     }
 
+    .profile-img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
     .nav-links {
-        display: none;
+        /* display: none; */
+        padding: 1px 10px;
+        overflow-y: auto;
+        width: 180px;
     }
 
     .hero-title {
